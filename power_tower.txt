@@ -1,0 +1,9 @@
+def power_tower(*a):
+""" This is a dangerous program since it may crash your system if RAM gets overloaded and
+it will soon get overloaded. If you start with 2 as frist argument then you can have 5
+arguments to be safe otherwise it will crash even before that. So I am not saving it as
+python file nor I am eliminating extra white space. """
+     ...:     total = 1
+     ...:     for i in a:
+     ...:         total = i**total
+     ...:     return total, len(str(total))
