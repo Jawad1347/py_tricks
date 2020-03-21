@@ -20,4 +20,4 @@ def fun(string):
 ' {string} '")
 
 
-fun(input("Say something "))
+fun(input("Say something ")) # I.C now
