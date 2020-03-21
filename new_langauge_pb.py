@@ -19,5 +19,5 @@ for word in original:
         new_word = the_rest + cons + "ay"
         new_words.append(new_word)
 
-
-print(new_words)
+sentence = " ".join(new_words)
+print(sentence)
