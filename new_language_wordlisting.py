@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """ This will careate a funny langauge """
-
+NEW_SENTENCE = []
 WORDS = input("Say something ").lower().split()
 NEW_WORD_LIST = []
 WORD_LIST = []
@@ -8,6 +8,7 @@ for word in WORDS:
     if word[0] in "aeiou":
         word = word + "yay"
         NEW_WORD_LIST.append(word)
+        NEW_SENTENCE.append(word)
     else:
         while word[0] not in "aeiou":
             if len(word) < 2:
@@ -16,4 +17,6 @@ for word in WORDS:
             word = word[1:]+word[0]
         word = word+"ay"
         WORD_LIST.append(word)
-print(NEW_WORD_LIST, WORD_LIST, "from ", WORDS)
+        NEW_SENTENCE.append(word)
+print(NEW_WORD_LIST, WORD_LIST, NEW_SENTENCE)
+# print(NEW_WORD_LIST, WORD_LIST, "from ", WORDS, NEW_SENTENCE)
